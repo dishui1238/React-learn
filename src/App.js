@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Context from "./pages/Context";
+import HOCPage from "./pages/HOCComp";
+import FormComp from "./pages/FormComp";
+import "./index.less";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app" style={{ display: "flex" }}>
+      {/* 1. react 跨层级通信 context */}
+      <Context />
+      {/* 2. 高阶组件 */}
+      <HOCPage />
+      {/* 3. 手写 Form 组件 */}
+      <FormComp />
     </div>
   );
 }
