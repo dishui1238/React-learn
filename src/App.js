@@ -1,6 +1,7 @@
 import Context from "./pages/Context";
 import HOCPage from "./pages/HOCComp";
 import FormComp from "./pages/FormComp";
+import ReduxPage from "./pages/Redux";
 import "./index.less";
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
       <HOCPage />
       {/* 3. 手写 Form 组件 */}
       <FormComp />
+      {/* 4. redux */}
+      <ReduxPage />
     </div>
   );
 }
