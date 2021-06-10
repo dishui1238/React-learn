@@ -9,6 +9,8 @@ import ReactReduxHookPage from "./pages/ReactRedux/hookPage";
 import { Provider } from "./pages/ReactRedux/MyReactRedux";
 import store from "./pages/ReactRedux/stores";
 
+import RouterPage from "./pages/ReactRouter";
+
 import "./index.less";
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
         {/* hook 版的 react-redux */}
         <ReactReduxHookPage />
       </Provider>
+      {/* 6. react-router */}
+      <RouterPage />
     </div>
   );
 }
