@@ -11,6 +11,10 @@ import store from "./pages/ReactRedux/stores";
 
 import RouterPage from "./pages/ReactRouter";
 
+import PrivateRoutePage from "./pages/PrivateRoute";
+import privateRouteStore from "./pages/PrivateRoute/store";
+import { Provider as PProvider } from "react-redux";
+
 import "./index.less";
 
 function App() {
@@ -31,7 +35,11 @@ function App() {
         <ReactReduxHookPage />
       </Provider>
       {/* 6. react-router */}
-      <RouterPage />
+      {/* <RouterPage /> */}
+      {/* 7. PrivateRoute 路由守卫 */}
+      <PProvider store={privateRouteStore}>
+        <PrivateRoutePage />
+      </PProvider>
     </div>
   );
 }

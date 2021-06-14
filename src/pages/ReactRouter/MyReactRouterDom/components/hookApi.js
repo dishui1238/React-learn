@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { RouterContex } from "../contex";
 
+// hook api 只能用于函数组件
+
 export function useHistory() {
   return useContext(RouterContex).history;
 }
