@@ -15,6 +15,9 @@ import PrivateRoutePage from "./pages/PrivateRoute";
 import privateRouteStore from "./pages/PrivateRoute/store";
 import { Provider as PProvider } from "react-redux";
 
+import ReactExp from "./pages/MyReact";
+
+
 import "./index.less";
 
 function App() {
@@ -40,6 +43,7 @@ function App() {
       <PProvider store={privateRouteStore}>
         <PrivateRoutePage />
       </PProvider>
+
     </div>
   );
 }
